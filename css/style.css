@@ -647,12 +647,30 @@ a:focus {
 
 .team_section .team_container .box .detail-box {
   margin: 25px 0;
+  padding: 0 20px;
 }
 
 .team_section .team_container .box .detail-box h5 {
   color: #00bbf0;
   font-weight: 600;
   position: relative;
+  margin-bottom: 5px;
+}
+
+.team_section .team_container .box .detail-box .position {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team_section .team_container .box .detail-box .bio {
+  color: #cccccc;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 .team_section .team_container .box .social_box {

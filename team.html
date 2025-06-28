@@ -32,6 +32,128 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- Custom Team Page Styles -->
+  <style>
+    .team_section .subtitle {
+      color: #666;
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+
+    .team_intro_box {
+      background: #f8f9fa;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .team_content h3 {
+      color: #2c3e50;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .team_stats .stat_item h4 {
+      color: #e74c3c;
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .team_stats .stat_item p {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .team_image_box {
+      padding-left: 30px;
+    }
+
+    .value_box {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      text-align: center;
+    }
+
+    .value_box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .value_icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(45deg, #e74c3c, #c0392b);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .value_icon i {
+      font-size: 35px;
+      color: #fff;
+    }
+
+    .value_content h5 {
+      color: #2c3e50;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .value_content p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .team_expertise_section {
+      background: #2c3e50;
+      padding: 40px;
+      border-radius: 15px;
+      color: #fff;
+    }
+
+    .expertise_item {
+      padding: 20px;
+    }
+
+    .expertise_item i {
+      font-size: 40px;
+      color: #e74c3c;
+      margin-bottom: 15px;
+    }
+
+    .expertise_item h6 {
+      color: #fff;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .team_intro_box {
+        padding: 30px 20px;
+      }
+      
+      .team_image_box {
+        padding-left: 0;
+        margin-top: 30px;
+      }
+      
+      .value_box {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+
 </head>
 
 <body class="sub_page">
@@ -93,143 +215,140 @@
 
   <!-- team section -->
   <section class="team_section layout_padding">
-    <div class="container-fluid">
+    <div class="container">
       <div class="heading_container heading_center">
         <h2 class="">
           Our <span> Team</span>
         </h2>
+        <p class="subtitle">Excellence Through Collaboration</p>
       </div>
 
-      <div class="team_container">
-        <div class="row">
-          <!-- <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
+      <!-- Team Message Section -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+          <div class="team_intro_box">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="team_content">
+                  <h3>Building Excellence Together</h3>
+                  <p class="lead mb-4">At PlanetSensor LLC, we are a dedicated team of software engineers, AI specialists, and technology innovators working together to deliver cutting-edge solutions for our clients.</p>
+                  <p>Our collaborative approach combines diverse expertise in software development, artificial intelligence, machine learning, and enterprise technology to create impactful solutions that drive business success.</p>
+                  <div class="team_stats mt-4">
+                    <div class="row text-center">
+                      <div class="col-4">
+                        <div class="stat_item">
+                          <h4>15+</h4>
+                          <p>Projects Delivered</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="stat_item">
+                          <h4>5+</h4>
+                          <p>Years Experience</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="stat_item">
+                          <h4>100%</h4>
+                          <p>Client Satisfaction</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="detail-box">
-                <h5>
-                  Joseph Brown
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Nancy White
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
+              <div class="col-lg-6">
+                <div class="team_image_box">
+                  <img src="images/about-img.png" alt="Team Collaboration" class="img-fluid rounded">
+                </div>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Values Section -->
+      <div class="row">
+        <div class="col-12">
+          <div class="heading_container heading_center mb-5">
+            <h3>Our Core <span>Values</span></h3>
+            <p>The principles that guide everything we do</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="value_box">
+            <div class="value_icon">
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+            <div class="value_content">
+              <h5>Collaboration</h5>
+              <p>We believe in the power of teamwork and open communication. By combining our diverse skills and perspectives, we create solutions that are greater than the sum of their parts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="value_box">
+            <div class="value_icon">
+              <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            </div>
+            <div class="value_content">
+              <h5>Innovation</h5>
+              <p>We stay at the forefront of technology, constantly exploring new approaches and methodologies to deliver cutting-edge solutions that drive digital transformation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="value_box">
+            <div class="value_icon">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <div class="value_content">
+              <h5>Excellence</h5>
+              <p>We are committed to delivering the highest quality in everything we do, from code quality to client service, ensuring exceptional results that exceed expectations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Expertise Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="team_expertise_section">
+            <div class="heading_container heading_center mb-4">
+              <h3>Our <span>Expertise</span></h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="expertise_item text-center">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  <h6>Full-Stack Development</h6>
+                </div>
               </div>
-              <div class="detail-box">
-                <h5>
-                  Earl Martinez
-                </h5>
-                <p>
-                  Marketing Head
-                </p>
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="expertise_item text-center">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                  <h6>AI & Machine Learning</h6>
+                </div>
               </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="expertise_item text-center">
+                  <i class="fa fa-cloud" aria-hidden="true"></i>
+                  <h6>Cloud Solutions</h6>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-3">
+                <div class="expertise_item text-center">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  <h6>Mobile Development</h6>
+                </div>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-sm-6">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/team-4.jpeg" class="img1" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Suroj Lamichhane
-                </h5>
-                <p>
-                  Software Engineer
-                </p>
-              </div>
-              <div class="social_box">
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true" ></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/suroj-lamichhane-6a8b0411a/">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -243,88 +362,62 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <!-- <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
+            <h4>Contact Info</h4>
+            <div class="contact_link_box">
+              <a href="mailto:planetsensorllc@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <span>planetsensorllc@gmail.com</span>
               </a>
-            </div> -->
+              <a href="tel:+1234567890">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+1 (234) 567-8900</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>New York, NY</span>
+              </a>
+            </div>
           </div>
           <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
+            <a href="#" target="_blank">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="#" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
             </a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_detail">
-            <h4>
-              Info
-            </h4>
+            <h4>About PlanetSensor LLC</h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              We are a team of experienced software engineers, AI specialists, and data scientists dedicated to delivering cutting-edge technology solutions that drive business success and innovation.
             </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto info_col">
           <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
+            <h4>Quick Links</h4>
             <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="service.html">Services</a>
+              <a href="why.html">Why Us</a>
+              <a class="active" href="team.html">Team</a>
+              <a href="privacy-policy.html">Privacy Policy</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
+        <div class="col-md-6 col-lg-3 info_col">
+          <h4>Stay Connected</h4>
+          <form action="https://formsubmit.co/planetsensorllc@gmail.com" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <input type="hidden" name="_subject" value="Newsletter Subscription - PlanetSensor LLC" />
+            <input type="hidden" name="_next" value="https://surojl1.github.io/index.html#contact" />
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -337,8 +430,7 @@
   <section class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved By PlanetSensor LLC
       </p>
     </div>
   </section>
@@ -360,6 +452,11 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+  
+  <!-- Dynamic Year Script -->
+  <script>
+    document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+  </script>
 
 </body>
 
