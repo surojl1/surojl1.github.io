@@ -1083,16 +1083,12 @@ a:focus {
   justify-content: flex-start;
 }
 
-.contact_section .social_box.justify-content-center {
+.contact_section .social_box.d-flex.justify-content-center {
   justify-content: center !important;
 }
 
-.contact_section .contact_social.text-center {
+.contact_section .contact_social h5.text-center {
   text-align: center;
-}
-
-.contact_section .contact_social.text-center .social_box {
-  justify-content: center;
 }
 
 .info_section .social_box a,
